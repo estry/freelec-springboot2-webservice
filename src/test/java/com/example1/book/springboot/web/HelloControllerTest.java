@@ -14,7 +14,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @RunWith(SpringRunner.class) //link springboot test to junit
-@WebMvcTest //focus on Web(spring MVC)
+@WebMvcTest(controllers = HelloController.class) //focus on Web(spring MVC)
 public class HelloControllerTest {
     @Autowired //about Bean
     private MockMvc mvc; //start of spring MVC test
